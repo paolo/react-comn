@@ -2,7 +2,10 @@
   "name": "react-comn",
   "version": "0.1.0",
   "description": "Small set of functions to create react components and containers",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "babel src --out-dir dist"
+  },
   "repository": {
     "url": "git@github.com:paolo/react-comn.git",
     "type": "git"
@@ -42,6 +45,7 @@
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
     "eslint": "3.7.1",
     "eslint-config-airbnb": "12.0.0",
     "eslint-plugin-import": "1.16.0",
