@@ -1,0 +1,53 @@
+{
+  "name": "react-comn",
+  "version": "0.1.0",
+  "description": "Small set of functions to create react components and containers",
+  "main": "index.js",
+  "repository": {
+    "url": "git@github.com:paolo/react-comn.git",
+    "type": "git"
+  },
+  "author": "Paolo Castro <paolocastro.deb@gmail.com>",
+  "license": "MIT",
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "plugins": [
+      "react"
+    ],
+    "extends": [
+      "airbnb"
+    ],
+    "rules": {
+      "react/jsx-filename-extension": [
+        1,
+        {
+          "extensions": [
+            ".js",
+            ".jsx"
+          ]
+        }
+      ],
+      "react/prefer-es6-class": 0,
+      "import/no-extraneous-dependencies": [
+        "error",
+        {
+          "devDependencies": true
+        }
+      ]
+    }
+  },
+  "devDependencies": {
+    "eslint": "3.7.1",
+    "eslint-config-airbnb": "12.0.0",
+    "eslint-plugin-import": "1.16.0",
+    "eslint-plugin-jsx-a11y": "2.2.3",
+    "eslint-plugin-react": "6.4.1"
+  },
+  "dependencies": {
+    "react": "^15.3.2",
+    "react-immutable-proptypes": "^2.1.0"
+  }
+}
