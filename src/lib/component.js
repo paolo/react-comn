@@ -1,7 +1,7 @@
-import React, { createClass } from 'react';
+import { createClass } from 'react';
 import ImmutablePropTypes from 'react-immutable-proptypes';
 
-export default function component(Component) {
+export default function component(render) {
   const UIComponent = createClass({
     propTypes: {
       data: ImmutablePropTypes.map.isRequired,
@@ -12,7 +12,7 @@ export default function component(Component) {
     },
 
     render() {
-      return <Component {...this.props} />;
+      return render.call(this, this.props);
     },
   });
 
