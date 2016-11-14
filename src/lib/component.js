@@ -10,7 +10,7 @@ export default function component(render) {
     },
 
     shouldComponentUpdate(nextProps) {
-      return !this.props.data.equals(nextProps.data);
+      return this.props.data !== nextProps.data;
     },
 
     render() {
