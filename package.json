@@ -1,6 +1,6 @@
 {
   "name": "react-comn",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Small set of functions to create react components and containers",
   "main": "./dist/index.js",
   "scripts": {
