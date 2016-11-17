@@ -1,9 +1,9 @@
 import { createClass } from 'react';
 import ImmutablePropTypes from 'react-immutable-proptypes';
 
-export default function component(render) {
+export default function component(render, name = render.name) {
   return createClass({
-    displayName: render.name,
+    displayName: name,
 
     propTypes: {
       data: ImmutablePropTypes.map.isRequired,
